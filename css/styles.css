@@ -8,7 +8,8 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
+  
 }
 
 .heading {
@@ -18,11 +19,7 @@ body {
   font-weight: 900;
 }
 
-.image-main {
-  transform: rotate(25deg);
-  position: absolute;
-  /* width: 40%; */
-}
+
 
 .download-button {
   margin: 5% 3% 5% 0;
@@ -45,10 +42,13 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
+  color: black;
 }
+
 
 .feature-icons {
   color: #ef8172;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -56,19 +56,14 @@ body {
   color: #ff4c68;
 }
 
-#features {
-  padding: 7% 15%;
-  background-color: #fff;
-  position: relative;
-  z-index: 1;
-}
+
 
 .middle-container-div {
   text-align: center;
 }
 
 .feature-box {
-  padding: 4.5%;
+  padding: 5%;
 }
 
 h3 {
@@ -87,11 +82,17 @@ p {
   color: #fff;
 }
 
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .testimonial-image {
@@ -124,3 +125,56 @@ h2 {
   padding: 3% 2%;
   
 }
+
+#features {
+  padding: 5% 15%;
+  background-color: #fff;
+  position: relative;
+}
+
+.image-main {
+  rotate: 25deg;
+  position: absolute;
+}
+
+@media (max-width:1000px){
+  .image-main{
+    position: static;
+    rotate:0deg;
+  }
+  #title{
+    text-align: center;
+  }
+}
+
+#cta{
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15% 3%;
+}
+.footer-note{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 3rem;
+}
+
+#footer{
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.social{
+  padding:10px 50px;
+  margin-bottom: 20px;
+}
+
+.social1:hover{
+  color: orangered;
+}
+
+.social2:hover{
+  color: gray;
+}
+
